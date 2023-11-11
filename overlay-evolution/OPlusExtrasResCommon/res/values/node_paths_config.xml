@@ -12,7 +12,7 @@
     <!-- High touch polling rate procfs node path -->
     <string name="node_high_touch_polling_rate_switch" translatable="false">/proc/touchpanel/game_switch_enable</string>
 
-
-
+    <!-- High Brightness sysfs node path -->
+    <string name="node_hbm_switch" translatable="false">/sys/kernel/oplus_display/hbm</string>
 
 </resources>
