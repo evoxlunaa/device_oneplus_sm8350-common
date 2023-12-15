@@ -103,6 +103,13 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti.recovery \
     android.hardware.boot@1.2-service
 
+# CLO Framework Boost
+$(call inherit-product, $(LOCAL_PATH)/perf/perf-vendor.mk)
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    QXPerformance \
+    UxPerformance
+
 # Camera
 $(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
 
@@ -420,6 +427,7 @@ PRODUCT_COPY_FILES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0 \
     android.hardware.thermal@2.0-service.qti
 
 # Touch
